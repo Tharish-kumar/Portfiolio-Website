@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <nav id="header-nav"> 
+        <div class="nav-container" data-aos="fade-down">
+            <div class="logo">Tharish Kumar</div>
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="https://www.linkedin.com/in/tharish-kumar-v-b77660283">LinkedIn</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="profile" data-aos="fade-up">
+        <div class="picture-container" data-aos="fade-right">
+            <img src="Assets/profile-img 2.png" alt="Profile Picture">
+        </div>
+        <div class="section-text" data-aos="fade-left">
+            <p class="section-text-p1">Hello I'm</p>
+            <h2>Tharish Kumar</h2>
+            <p class="section-text-p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn-cv" onclick="window.open('./Assets/resume-example.pdf')">Download CV</button>
+                <button class="btn-contact" onclick="window.open('mailto:tharishkumar117@gmailcom')">Contact Info</button>
+            </div>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/tharish-kumar-v-b77660283" target="_blank"><img src="Assets/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://github.com/account" target="_blank"><img src="Assets/github.png" alt="GitHub"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" data-aos="fade-right">
+        <div class="about-container">
+            <div class="head-title">
+                <p class="konw-more">Get To Know More</p>
+                <h2>About Me</h2>
+            </div>
+            <div class="content-box">
+                <div class="image-box" data-aos="zoom-in">
+                    <img src="Assets/pro2.png" alt="">
+                </div>
+                <div class="exp">
+                    <div class="image-tet" data-aos="fade-up">
+                        <img src="Assets/experience.png" alt="experience-image">
+                        <h3>Experience</h3>
+                        <p class="year-exp">1 Year</p>
+                        <p>Frontend Developer</p>
+                    </div>
+                    <div class="image-text" data-aos="fade-up" data-aos-delay="100">
+                        <img src="Assets/education.png" alt="education-image">
+                        <h3>Education</h3>
+                        <p class="year-exp">B.Tech</p>
+                        <p>Computer Science Engineering</p>
+                    </div>
+                    <div class="para-content" data-aos="fade-up" data-aos-delay="200">
+                        <p>I'm a passionate Software Engineering student with a knack for building smart, user-friendly solutions. Skilled in full-stack development, I enjoy solving real-world problems through code. Experienced in Java, Python, and web technologies. Constantly exploring new tools, I aim to create impactful and innovative digital experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" data-aos="fade-left">
+        <h5>Explore My</h5>
+        <h2>Experience</h2>
+        <div class="exp-container">
+            <div class="exp-box" data-aos="fade-up">
+                <h3>Frontend Development</h3>
+                <div class="skill-list">
+                    <div class="skill"><i class="bx bx-badge-check"></i><div class="text"><h4>HTML</h4><p>Experienced</p></div></div>
+                    <div class="skill"><i class="bx bx-badge-check"></i><div class="text"><h4>CSS</h4><p>Intermediate</p></div></div>
+                    <div class="skill"><i class="bx bx-badge-check"></i><div class="text"><h4>JavaScript</h4><p>Basic</p></div></div>
+                    <div class="skill"><i class="bx bx-badge-check"></i><div class="text"><h4>UI/UX</h4><p>Basic</p></div></div>
+                    <div class="skill"><i class="bx bx-badge-check"></i><div class="text"><h4>Git</h4><p>Intermediate</p></div></div>
+                    <div class="skill"><i class="bx bx-badge-check"></i><div class="text"><h4>SASS</h4><p>Basic</p></div></div>
+                </div>
+            </div>
+            <div class="exp-box" data-aos="fade-up" data-aos-delay="100">
+                <h3>Backend Development</h3>
+                <div class="skill-list">
+                    <div class="skill"><i class="bx bx-badge-check"></i><div class="text"><h4>SQL</h4><p>Basic</p></div></div>
+                    <div class="skill"><i class="bx bx-badge-check"></i><div class="text"><h4>MongoDB</h4><p>Intermediate</p></div></div>
+                    <div class="skill"><i class="bx bx-badge-check"></i><div class="text"><h4>Java</h4><p>Intermediate</p></div></div>
+                    <div class="skill"><i class="bx bx-badge-check"></i><div class="text"><h4>Python</h4><p>Intermediate</p></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- project -->
+          <section id="projects">
+    <div class="pro-header">
+        <p>Browse My Recent</p>
+        <h2>Projects</h2>
+    </div>
+
+    <div class="pro-container">
+        <div class="pro-box" data-aos="fade-up">
+            <img src="Assets/Restaurant-img.jpg" alt="Project 1">
+            <h3>Restaurant Website</h3>
+            <p>A responsive restaurant website featuring a modern design, menu showcase, and contact form.</p>
+            <button class="btn-pro" onclick="window.open('https://tharish-kumar.github.io/RESTAURANT-WEBSITE/')">View Project</button>
+        </div>
+
+        <div class="pro-box" data-aos="fade-up">
+            <img src="Assets/university-website.jpg" alt="Project 2">
+            <h3>University Website</h3>
+            <p>A responsive and modern university website featuring smooth navigation, and a clean user interface.</p>
+            <button class="btn-pro" onclick="window.open('https://tharish-kumar.github.io/UNIVERSITY-WEBSITE/')">Live Demo</button>
+        </div>
+
+        <div class="pro-box" data-aos="fade-up">
+            <img src="Assets/booksky.jpg" alt="Project 3">
+            <h3>Booksky</h3>
+            <p>A sleek and responsive online bookstore website showcasing books with smooth navigation and user-friendly design.</p>
+            <button class="btn-pro" onclick="window.open('https://tharish-kumar.github.io/BOOKSKY-WEBSITE/')">Live Demo</button>
+        </div>
+    </div>
+
+    <div class="view">
+        <button class="btn-view" onclick="window.open('https://github.com/Tharish-kumar')">View All Projects</button>
+    </div>
+
+</section>
+
+
+<!-- contact -->
+
+
+  <section class="contact-section"data-aos="fade-up">
+    <p class="subheading">Get in Touch</p>
+    <h1 class="main-heading">Contact Me</h1>
+    
+    <div class="contact-box" data-aos="fade-up" >
+      <a href="mailto:Tharishkumar117@gmail.com" class="contact-link">
+        <span class="icon">✉</span> Gmail
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" class="contact-link">
+        <span class="icon">in</span> LinkedIn
+      </a>
+    </div>
+
+    
+
+   
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
