@@ -193,87 +193,7 @@ a:hover {
 }
 
 /* about section */
-#about {
-    padding: 5% 5% 0;
-    margin-top: 5rem;
-}
 
-.about-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.konw-more {
-    letter-spacing: 1.5px;
-    font-weight: 600;
-    text-align: center;
-}
-
-.head-title h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-align: center;
-    margin: 10px 0;
-}
-
-.content-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-top: 3rem;
-}
-
-.image-box {
-    flex: 1;
-    min-width: 300px;
-    max-width: 400px;
-    display: flex;
-    justify-content: center;
-}
-
-.image-box img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 2rem;
-    border: 1px solid #ccc;
-}
-
-.right-section {
-    flex: 1;
-    min-width: 300px;
-    max-width: 600px;
-}
-
-.exp-boxes {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.box {
-    flex: 1;
-    min-width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 2rem;
-    padding: 1.5rem;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.08);
-}
-
-.box img {
-    width: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.para-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    text-align: justify;
-}
 
 /* experience skills */
 #experience {
@@ -597,5 +517,191 @@ a:hover {
     
     .pro-box {
         max-width: 100%;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi) {
+    /* Retina-specific styles */
+    .image-box img {
+        border-radius: 10px;
+    }
+}
+
+/* About Section - Fixed for MacBook M1 */
+#about {
+    padding: 80px 5%;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.about-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.head-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.konw-more {
+    font-size: 1.1rem;
+    color: #666;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.head-title h2 {
+    font-size: 2.8rem;
+    color: #111;
+    font-weight: 700;
+    margin: 0;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+    width: 100%;
+}
+
+.image-box {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-box img:hover {
+    transform: scale(1.03);
+}
+
+.right-section {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.exp-boxes {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.box {
+    flex: 1;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.box p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.para-content {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.para-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .content-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .image-box {
+        max-width: 500px;
+        margin-bottom: 40px;
+    }
+    
+    .right-section {
+        width: 100%;
+    }
+    
+    .exp-boxes {
+        flex-wrap: wrap;
+    }
+    
+    .box {
+        min-width: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .head-title h2 {
+        font-size: 2.2rem;
+    }
+    
+    .box {
+        min-width: 100%;
+    }
+    
+    .para-content {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .head-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .box {
+        padding: 20px;
+    }
+    
+    .box img {
+        width: 40px;
+        height: 40px;
     }
 }
