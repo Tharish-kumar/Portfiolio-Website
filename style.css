@@ -193,7 +193,7 @@ a:hover {
 }
 
 /* about section */
-/* About Me Section - MacBook M1 Air Fix */
+/* About Me Section - Perfect Alignment Fix */
 #about {
     padding: 80px 5%;
     margin: 0 auto;
@@ -234,9 +234,7 @@ a:hover {
 }
 
 .image-box {
-    flex: 1;
-    min-width: 300px;
-    max-width: 400px;
+    flex: 0 0 400px; /* Fixed width for image */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,7 +249,6 @@ a:hover {
 
 .right-section {
     flex: 1;
-    min-width: 300px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -269,17 +266,20 @@ a:hover {
     background: white;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .box img {
     width: 50px;
     height: 50px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .box h3 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
     color: #333;
     text-align: center;
 }
@@ -304,30 +304,45 @@ a:hover {
     line-height: 1.8;
     color: #555;
     margin: 0;
+    text-align: left;
 }
 
-/* Specific MacBook M1 Air Adjustments */
-@media screen and (min-width: 1440px) {
-    /* Adjustments for MacBook M1 Air screen size */
+/* Exact Alignment Fixes */
+.box p:first-of-type {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.box p:not(:first-of-type) {
+    font-weight: 400;
+}
+
+/* MacBook M1 Air Specific Adjustments */
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
     .content-box {
-        gap: 80px;
+        gap: 70px;
     }
     
     .exp-boxes {
-        gap: 40px;
+        gap: 35px;
     }
     
     .box {
-        padding: 35px;
+        padding: 30px 25px;
     }
     
-    .para-content p {
-        font-size: 1.1rem;
-        line-height: 1.9;
+    .box h3 {
+        margin-bottom: 15px;
     }
 }
 
 /* Responsive Adjustments */
+@media screen and (max-width: 1200px) {
+    .image-box {
+        flex: 0 0 350px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .content-box {
         flex-direction: column;
@@ -335,12 +350,9 @@ a:hover {
     }
     
     .image-box {
+        flex: 0 0 100%;
         max-width: 500px;
         margin-bottom: 40px;
-    }
-    
-    .right-section {
-        width: 100%;
     }
 }
 
@@ -353,10 +365,6 @@ a:hover {
         flex-direction: column;
         gap: 20px;
     }
-    
-    .box {
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -364,11 +372,7 @@ a:hover {
         font-size: 1.8rem;
     }
     
-    .box {
-        padding: 25px;
-    }
-    
-    .para-content {
+    .box, .para-content {
         padding: 25px;
     }
 }
